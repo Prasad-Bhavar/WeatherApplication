@@ -1,0 +1,68 @@
+InfoBox container styling
+.Info-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Card container */
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card styling */
+  .MuiCard-root {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  /* CardMedia image */
+  .MuiCardMedia-root {
+    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+  }
+  
+  /* Typography inside the card */
+  .MuiTypography-h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .MuiTypography-body2 {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  /* Weather description text */
+  .MuiTypography-body2 i {
+    color: #1976d2;
+    font-style: italic;
+  }
+  
+  /* Padding between text sections */
+  .MuiTypography-body2 p {
+    margin: 5px 0;
+  }
+  
+  /* CardContent customization */
+  .MuiCardContent-root {
+    padding: 15px 20px;
+  }
+  
+  /* Add subtle hover effect on the card */
+  .MuiCard-root:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  

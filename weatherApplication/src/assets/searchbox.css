@@ -1,0 +1,43 @@
+
+.cardcontainer{
+   display: flex;
+   justify-content: center;
+}
+
+.search-box {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
+  }
+  
+  .search-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+
+  }
+ 
+
+  /* Button styling */
+  .search-box button {
+    background-color: #1976d2; 
+    color: white;
+
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    
+  }
+
+
+  
