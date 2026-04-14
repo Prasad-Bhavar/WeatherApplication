@@ -9,9 +9,27 @@ pipeline {
             }
         }
 
+        stage('Install Dependencies') {
+            steps {
+                dir('weatherApplication') {
+                    sh 'npm install'
+                }
+            }
+        }
+
+        stage('Build React App') {
+            steps {
+                dir('weatherApplication') {
+                    sh 'npm run build'
+                }
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t weather-app .'
+                dir('weatherApplication') {
+                    sh 'docker build -t weather-app .'
+                }
             }
         }
 
